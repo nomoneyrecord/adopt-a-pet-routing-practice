@@ -9,7 +9,8 @@ import { Route, createBrowserRouter, createRoutesFromElements } from 'react-rout
 // create router with JSX Route elements
 const appRouter = createBrowserRouter(createRoutesFromElements(
 <Route path='/' element={ <Root/> }>
-  <Route index element='/pages/home'/>
+  <Route path=':type' />
+  <Route index element={ <HomePage/> }/>
 </Route>));
 
 function App() {
